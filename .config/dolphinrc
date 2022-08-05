@@ -1,0 +1,54 @@
+MenuBar=Disabled
+
+[CompactMode]
+FontWeight=50
+
+[ContextMenu]
+ShowOpenTerminal=false
+
+[DetailsMode]
+FontWeight=50
+
+[General]
+GlobalViewProps=false
+RememberOpenedTabs=false
+ShowZoomSlider=false
+Version=201
+ViewPropsTimestamp=2022,8,4,21,55,1.587
+
+[IconsMode]
+FontWeight=50
+PreviewSize=112
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[KPropertiesDialog]
+DP-0 HDMI-0 Height 1920x1080=618
+DP-0 HDMI-0 Width 1920x1080=443
+DP-4 HDMI-0 Height 1920x1080=474
+DP-4 HDMI-0 Width 1920x1080=424
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[Open-with settings]
+CompletionMode=1
+History=code,gwe,feh,leaf,lea
+
+[PlacesPanel]
+IconSize=32
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,pothumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
+
+[Search]
+What=Content
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly

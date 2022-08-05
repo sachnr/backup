@@ -1,0 +1,5 @@
+ [Desktop Entry]
+Type=Application
+Name=nvidia-script
+Exec=/home/sachnr/.local/bin/nvidia-startup
+OnlyShowIn=GNOME;

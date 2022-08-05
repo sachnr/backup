@@ -1,0 +1,4 @@
+#!/bin/bash
+nvidia-settings --load-config-only
+xinput --set-prop 11 'libinput Accel Profile Enabled' 0, 1
+export STARSHIP_CONFIG=~/.config/starship/starship.toml

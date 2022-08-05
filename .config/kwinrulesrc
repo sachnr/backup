@@ -1,0 +1,248 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[0ee496bf-abc1-4b1c-9d39-ff6cf29eb323]
+Description=Settings for Lutris
+activity=ba611c1a-8838-42d9-a277-ac64344ff5da
+activityrule=2
+wmclass=Lutris
+wmclasscomplete=true
+wmclassmatch=1
+
+[1]
+Description=Window settings for electron
+above=true
+aboverule=3
+activity=ba611c1a-8838-42d9-a277-ac64344ff5da
+clientmachine=localhost
+title=Open Folder
+types=32
+windowrole=gtkfilechooserdialog
+windowrolematch=1
+wmclass=electron
+wmclassmatch=1
+
+[10]
+Description=GtkFileChooserDialog
+above=true
+aboverule=2
+title=Open File
+windowrole=gtkfilechooserdialog
+windowrolematch=1
+wmclassmatch=1
+
+[11]
+Description=Window settings for Open File
+above=true
+aboverule=2
+title=Open File
+titlematch=1
+windowrole=gtkfilechooserdialog
+windowrolematch=1
+wmclassmatch=1
+
+[12]
+Description=Window settings for Add Folder to Workspace
+above=true
+aboverule=3
+title=Add Folder to Workspace
+titlematch=1
+wmclass=electron
+wmclassmatch=1
+
+[2]
+Description=Window settings for Steam
+activity=ba611c1a-8838-42d9-a277-ac64344ff5da
+activityrule=2
+title=Steam
+wmclass=steam
+wmclasscomplete=true
+wmclassmatch=1
+
+[250a9f86-1b65-48af-a1cf-f610dcb2d294]
+Description=Settings for lattedock
+above=true
+aboverule=2
+types=4
+wmclass=lattedock
+wmclasscomplete=true
+wmclassmatch=2
+
+[3]
+Description=Window settings for Lutris
+above=true
+activity=ba611c1a-8838-42d9-a277-ac64344ff5da
+activityrule=2
+title=Lutris
+wmclass=lutris lutris
+wmclasscomplete=true
+wmclassmatch=1
+
+[3550a7fd-48fd-416f-accf-6304fe137b02]
+Description=Window settings for Open File
+above=true
+aboverule=2
+title=Open File
+titlematch=1
+windowrole=GtkFileChooserDialog
+windowrolematch=1
+wmclassmatch=1
+
+[4]
+Description=Settings for lattedock
+above=true
+aboverule=2
+title=Calculator
+types=4
+wmclass=lattedock
+wmclasscomplete=true
+wmclassmatch=2
+
+[40d41471-d99a-4076-9c01-f727e623cd19]
+Description=Window settings for Calculator
+above=true
+aboverule=2
+title=Calculator
+types=1
+wmclass=gnome-calculator
+wmclassmatch=1
+
+[5]
+Description=Window settings for Calculator
+above=true
+aboverule=2
+title=Calculator
+types=1
+windowrole=gtkfilechooserdialog
+wmclass=gnome-calculator
+wmclassmatch=1
+
+[5fed479b-c454-4415-be07-997de722c3bd]
+Description=Window settings for Lutris
+activity=ba611c1a-8838-42d9-a277-ac64344ff5da
+activityrule=2
+title=Lutris
+wmclass=lutris lutris
+wmclasscomplete=true
+wmclassmatch=1
+
+[6]
+Description=Window settings for Open File
+aboverule=2
+title=Open File
+titlematch=1
+windowrole=gtkfilechooserdialog
+wmclassmatch=1
+
+[694401c8-fd28-4eda-a8d1-37d0041f1444]
+Description=Window settings for Save File
+above=true
+aboverule=3
+title=Save File
+titlematch=1
+wmclassmatch=1
+
+[7]
+Description=Window settings for Preferences
+above=true
+aboverule=2
+title=Preferences
+titlematch=1
+wmclassmatch=1
+
+[70b0bc44-c2dc-4981-8880-4249f7eeedff]
+Description=GtkFileChooserDialog
+above=true
+aboverule=2
+windowrole=GtkFileChooserDialog
+windowrolematch=1
+wmclassmatch=1
+
+[7f4a4622-72c4-4d69-a7db-27c9580878f6]
+Description=Application settings for code-oss
+clientmachine=localhost
+noborder=true
+noborderrule=2
+wmclass=code-oss
+wmclassmatch=1
+
+[8]
+Description=Window settings for Steam Guard - Computer Authorization Required
+aboverule=2
+title=Steam Guard - Computer Authorization Required
+titlematch=1
+wmclassmatch=1
+
+[88d7f77b-16c7-47cb-ad78-e49b0168cc1f]
+Description=Window settings for Preferences
+above=true
+aboverule=2
+title=Preferences
+titlematch=1
+wmclassmatch=1
+
+[8a492cbd-3183-4090-a776-b75554e4ec89]
+Description=Window settings for Add Folder to Workspace
+above=true
+aboverule=3
+title=Add Folder to Workspace
+titlematch=1
+wmclass=electron
+wmclassmatch=1
+
+[9]
+Description=Window settings for Save File
+above=true
+aboverule=3
+title=Save File
+titlematch=1
+windowrole=gtkfilechooserdialog
+wmclassmatch=1
+
+[General]
+count=12
+rules=1,2,3,4,5,6,7,8,9,10,11,12
+
+[aec8dad8-4cb1-4e6c-ac74-32aad3228b25]
+Description=Window settings for Steam
+activity=ba611c1a-8838-42d9-a277-ac64344ff5da
+activityrule=2
+title=Steam
+wmclass=steam
+wmclasscomplete=true
+wmclassmatch=1
+
+[bceb4649-917b-45a0-bb10-c6c90df2c648]
+Description=Window settings for electron
+above=true
+aboverule=3
+clientmachine=localhost
+title=Open Folder
+types=32
+windowrole=gtkfilechooserdialog
+windowrolematch=1
+wmclass=electron
+wmclassmatch=1
+
+[c56bbe3d-8ce8-449f-b6ff-f5e375092f61]
+Description=Window settings for Steam Guard - Computer Authorization Required
+aboverule=2
+title=Steam Guard - Computer Authorization Required
+titlematch=1
+wmclassmatch=1
+
+[d285370e-e3cc-47e0-a0aa-667ed28bb5d3]
+Description=Steam
+activity=ba611c1a-8838-42d9-a277-ac64344ff5da
+activityrule=2
+wmclass=Steam
+wmclasscomplete=true
+wmclassmatch=1
+
+[fd337ff4-0c4d-4650-8a38-1959e0171d0a]
+Description=Window settings for Open File
+aboverule=2
+title=Open File
+titlematch=1
+windowrole=GtkFileChooserDialog
+wmclassmatch=1
