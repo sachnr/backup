@@ -1,12 +1,12 @@
 #!/bin/bash
 
-fg=eceff4
-wrong=bf616a
-highlight=81a1c1
-date=5e81ac
-verify=a3be8c
+fg=8aadf4
+wrong=f38ba8
+highlight=24273a
+date=8aadf4
+verify=a6e3a1
 
-i3lock -i /home/sachnr/.local/bin/i3lock/nordic-wallpaper.jpg \
+i3lock -i /home/sachnr/.local/bin/i3lock/7pm-aenami.png \
   -ntfe --force-clock --indicator --radius=40 --ring-width=80 \
   --inside-color=$fg --ring-color=$date --insidever-color=$verify \
   --ringver-color=$verify --insidewrong-color=$wrong --ringwrong-color=$wrong \

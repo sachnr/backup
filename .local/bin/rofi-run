@@ -1,2 +1,2 @@
 #!/bin/bash
-rofi -show drun -theme "~/.local/bin/rofi-drun-nord.rasi"
+rofi -show drun

@@ -7,7 +7,7 @@ install base packages and kernel
 # pacstrap /mnt base linux linux-firmware
 ```
 ```
-# pacstrap /mnt vim dhcpcd iwd network-manager os-prober grub efibootmgr sudo xdg-user-dirs man-db git zsh usbutils intel-ucode base-devel bluez bluez-utils
+# pacstrap /mnt vim dhcpcd iwd network-manager os-prober grub efibootmgr sudo xdg-user-dirs man-db git zsh usbutils intel-ucode base-devel bluez bluez-utils network-manager-applet
 ```
 ## Generating the fstab
 
@@ -133,6 +133,7 @@ Uncomment `GRUB_DISABLE_OS_PROBER="false"` in `/etc/default/grub` and generate b
 ```
 # systemctl enable NetworkManager bluetooth
 ```
+
 `exit` chroot and `reboot`  
 
 ### [[POST INSTALLATION]](./ArchInstall.md)

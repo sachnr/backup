@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 :root {
-  --bg: rgba(46, 52, 64);
-  --fg: #eceff4;
-  --secondaryFg: #b3b3b3;
-  --containerBg: rgba(59, 66, 82);
+  --bg: #1e1e2e;
+  --fg: #89b4fa;
+  --secondaryFg: #bac2de;
+  --containerBg: #313244;
   --searchBg: var(--containerBg);
-  --scrollbarColor: 5e81ac;
+  --scrollbarColor: #89b4fa;
+  --shadow: #181825;
   --fontFamily: 'Roboto Mono', monospace;
 }
 
 body {
-background-image: url("Painting.jpg");
+background-image: url("7pm-aenami.png");
 background-size: cover;
 /* background: #1D1F28; */
 margin: 0px;
@@ -70,6 +71,7 @@ margin: 0px;
   font-family: var(--fontFamily);
   color: var(--fg);
   text-align: center;
+  box-shadow: 6px 8px 12px var(--shadow);
 }
 .inline {
   display: inline-block;
@@ -110,6 +112,7 @@ margin: 0px;
   height: 15em;
   margin: 0em 0.5em;
   box-sizing: border-box;
+  box-shadow: 6px 8px 12px var(--shadow);
 }
 
 .bookmark-inner-container {
