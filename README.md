@@ -87,15 +87,16 @@ QT_QPA_PLATFORMTHEME='qt5ct'
 ```
 
 ### **Changing Theme,fonts etc**
-for gtk based applications
+for qt apps
 
 ```
 sudo pacman -S qt5ct kvantum
 ```
 
-for qt based applications
+for gtk apps
 
 ```
 sudo pacman -S gtk3 gtk-engine-murrine gtk-engines gnome-theme-extra
+yay -S lxappearance-gtk3 --noconfirm
 ```
 
