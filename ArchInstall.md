@@ -1,7 +1,7 @@
 ## Installation
 
-official [`wiki`](https://wiki.archlinux.org/index.php/Installation_guide)
-Uncomment `#ParallelDownloads = 10` from  `/etc/pacman.conf`
+#### official [`wiki`](https://wiki.archlinux.org/index.php/Installation_guide)
+#### Uncomment `#ParallelDownloads = 10` from  `/etc/pacman.conf`
 install base packages and kernel
 ```
 # pacstrap /mnt base linux linux-firmware
@@ -136,6 +136,6 @@ Uncomment `GRUB_DISABLE_OS_PROBER="false"` in `/etc/default/grub` and generate b
 
 `exit` chroot and `reboot`  
 
-### [[POST INSTALLATION]](./ArchInstall.md)
+### [[POST INSTALLATION]](./README.md)
 
 
