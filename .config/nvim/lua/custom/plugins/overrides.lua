@@ -17,37 +17,38 @@ M.nvimtree = {
 
 M.mason = {
   ensure_installed = {
+    
     -- lua stuff
     "lua-language-server",
     "stylua",
 
+    -- python
+    "black",
+    "python-lsp-server"
+    
+    -- c,c++,java
+    "clangd",
+    "clang-format",
+    "jdtls",
+
     -- web dev
     "css-lsp",
     "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "emmet-ls",
     "json-lsp",
+    "eslint_d",
+    "eslint-lsp",
+    "vue-language-server",
 
     -- shell
     "shfmt",
+    "bash-language-server",
     "shellcheck",
   },
 }
 
 M.treesitter = {
   ensure_installed = {
-    "vim",
-    "html",
-    "css",
-    "javascript",
-    "json",
-    "toml",
-    "markdown",
-    "c",
-    "bash",
-    "lua",
-    "norg",
+    "all",
   },
 }
 
