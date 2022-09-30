@@ -6,6 +6,7 @@ GPG_TTY=$(tty)
 export GPG_TTY
 export ZSH="$HOME/.config/.oh-my-zsh"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export PATH="${HOME}/.local/share/nvim/mason/bin:${PATH}"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -108,3 +109,4 @@ eval "$(starship init zsh)"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+

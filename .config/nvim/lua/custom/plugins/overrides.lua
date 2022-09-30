@@ -73,6 +73,10 @@ M.treesitter = {
     "yaml",
     "vue",
     "typescript",
+    "gitignore",
+    "go",
+    "latex",
+    "scss",
   },
 }
 
