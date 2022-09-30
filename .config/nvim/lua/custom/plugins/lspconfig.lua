@@ -10,9 +10,9 @@ local servers = {
   "cssls",
   "clangd",
   "eslint",
-  "jdtls",
   "vuels",
-  "pylsp"
+  "pylsp",
+  "sqls"
 }
 
 for _, lsp in ipairs(servers) do
@@ -21,3 +21,5 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+require("custom.plugins.java-lsp")

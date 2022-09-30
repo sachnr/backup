@@ -86,4 +86,30 @@ return {
     end,
   },
 
+  -- error highlight
+  ["folke/trouble.nvim"] = {
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {}
+    end,
+  },
+
+  -- project management
+  ["ahmedkhalf/project.nvim"] = {
+    after = "telescope.nvim",
+    config = function()
+      require("project_nvim").setup {
+        patterns = {
+          ".git",
+          "Makefile",
+          "*.sln",
+          "build/env.sh",
+          "Makefile",
+          "=src",
+        },
+        silent_chdir = false,
+      }
+      require("telescope").load_extension "projects"
+    end,
+  },
 }
