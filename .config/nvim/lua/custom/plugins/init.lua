@@ -129,10 +129,9 @@ return {
   },
 
   -- dim inactive windows
-  ["andreadev-it/shade.nvim"] = {
-    module = "shade",
+  ["sunjon/shade.nvim"] = {
     config = function()
-      require("custom.plugins.shade").setup {
+      require("shade").setup {
         overlay_opacity = 50,
         opacity_step = 1,
         exclude_filetypes = { "NvimTree" },
