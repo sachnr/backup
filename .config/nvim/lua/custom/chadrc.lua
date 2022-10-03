@@ -6,11 +6,10 @@ local M = {}
 -- example of changing theme:
 
 M.ui = {
-  theme = "rxyhn", -- default theme
+  theme = "yoru", -- default theme
 }
 
 M.plugins = require "custom.plugins"
-M.init = require "custom.init"
 M.mappings = require "custom.mappings"
 
 return M

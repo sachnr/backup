@@ -12,7 +12,7 @@ local servers = {
   "eslint",
   "vuels",
   "pylsp",
-  "sqls"
+  "sqlls"
 }
 
 for _, lsp in ipairs(servers) do

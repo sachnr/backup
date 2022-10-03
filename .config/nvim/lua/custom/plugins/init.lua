@@ -26,9 +26,18 @@ return {
   },
 
   ["goolord/alpha-nvim"] = {
+    after = "base46",
     disable = false,
-    cmd = "Alpha",
-    override_options = overrides.alpha,
+    config = function()
+      require "custom.plugins.alpha"
+    end,
+  },
+
+  ["folke/which-key.nvim"] = {
+    disable = false,
+    config = function ()
+      require "custom.plugins.whichkey"
+    end
   },
 
   -- =========================================================
@@ -102,14 +111,38 @@ return {
         patterns = {
           ".git",
           "Makefile",
-          "*.sln",
           "build/env.sh",
-          "Makefile",
-          "=src",
+          "pom.xml",
+          "rc.lua",
         },
         silent_chdir = false,
       }
       require("telescope").load_extension "projects"
     end,
   },
+
+  -- markdown-preview
+  ["iamcco/markdown-preview.nvim"] = {
+    run = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+  },
+
+  -- dim inactive windows
+  ["andreadev-it/shade.nvim"] = {
+    module = "shade",
+    config = function()
+      require("custom.plugins.shade").setup {
+        overlay_opacity = 50,
+        opacity_step = 1,
+        exclude_filetypes = { "NvimTree" },
+      }
+    end,
+  },
+
+  ["lewis6991/gitsigns.nvim"] = {
+    config = function ()
+      require('gitsigns').setup()
+    end
+  }
 }
