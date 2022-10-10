@@ -71,7 +71,7 @@ local options = {
       button("SPC t w", "  Find Word  ", ":Telescope live_grep<CR>"),
       button("SPC t k", "  Bookmarks  ", ":Telescope marks<CR>"),
       button("SPC t h", "  Themes  ", ":Telescope themes<CR>"),
-      button("SPC d s", "  Settings", ":e $MYVIMRC | :cd %:p:h <CR>"),
+      button("SPC o s", "  Settings", ":e $MYVIMRC | :cd %:p:h <CR>"),
     },
     opts = {
       spacing = 1,

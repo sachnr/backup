@@ -6,6 +6,7 @@ end
 M.disabled = {
 	n = {
 		["<leader>x"] = "",
+		["<leader>e"] = "",
 		["<C-c>"] = "",
 		["<leader>rn"] = "",
 		["<leader>uu"] = "",
@@ -64,14 +65,9 @@ M.general = {
 		-- formatter
 		["<leader>f"] = { "<cmd> :Format <CR>", "formatter" },
 		-- nvterm
-		["<leader>`"] = {
-			function()
-				require("nvterm.terminal").toggle("horizontal")
-			end,
-			"toggle horizontal term",
-		},
+		["<leader>`"] = { "<Cmd> :ToggleTerm <CR>" , "toggle horizontal term" },
 		-- tabufline
-		["<C-w>"] = {
+		["<leader>q"] = {
 			function()
 				require("nvchad_ui.tabufline").close_buffer()
 			end,
@@ -94,13 +90,7 @@ M.general = {
 	-- =========================================================
 	t = {
 		-- toggle terminal (terminal mode)
-		["<leader>`"] = {
-			function()
-				require("nvterm.terminal").toggle("horizontal")
-			end,
-			"toggle horizontal term",
-		},
-		["<C-c>"] = { termcodes("<C-\\><C-N>"), "escape terminal mode" },
+		["<leader>`"] = { "<Cmd> :ToggleTerm <CR>" , "toggle horizontal term" },
 		["<S-n>"] = { "<cmd> NvimTreeFocus <CR>", "focus nvimtree" },
 	},
 }

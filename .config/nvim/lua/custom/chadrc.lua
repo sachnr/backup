@@ -6,10 +6,11 @@ local M = {}
 -- example of changing theme:
 
 M.ui = {
-  theme = "yoru", -- default theme
+  theme = "gruvbox_material", -- default theme
 }
 
 M.plugins = require "custom.plugins"
 M.mappings = require "custom.mappings"
+M.init = require "custom.init"
 
 return M

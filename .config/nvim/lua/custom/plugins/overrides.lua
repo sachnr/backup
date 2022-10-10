@@ -22,33 +22,32 @@ M.nvimtree = {
 
 M.mason = {
   ensure_installed = {
-    -- lua
+    -- Language Servers
     "lua-language-server",
-    "stylua",
-
-    -- python
-    "black",
     "python-lsp-server",
-
-    -- c,c++,java
     "clangd",
-    "clang-format",
     "jdtls",
-
-    -- web dev
-    "css-lsp",
     "html-lsp",
     "json-lsp",
     "eslint-lsp",
+    "css-lsp",
+    "bash-language-server",
+    "sqlls",
+
+    -- Formatters
+    "black",
+    "stylua",
+    "clang-format",
     "prettierd",
     "vue-language-server",
-
-    -- shell
     "shfmt",
-    "bash-language-server",
 
-    -- db
-    "sqlls",
+    -- debuggers
+    "firefox-debug-adapter",
+    "java-debug-adapter",
+    "java-test",
+    "debugpy",
+    "cpptools",
   },
 }
 

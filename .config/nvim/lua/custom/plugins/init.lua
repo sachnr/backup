@@ -2,6 +2,11 @@ local overrides = require "custom.plugins.overrides"
 
 return {
 
+  -- Remove unused
+  ["NvChad/nvterm"] = {
+    disable = true,
+  },
+
   -- =========================================================
   -- ================== Override configs ====================
   -- =========================================================
@@ -35,9 +40,9 @@ return {
 
   ["folke/which-key.nvim"] = {
     disable = false,
-    config = function ()
+    config = function()
       require "custom.plugins.whichkey"
-    end
+    end,
   },
 
   -- =========================================================
@@ -128,20 +133,41 @@ return {
     end,
   },
 
-  -- dim inactive windows
-  ["sunjon/shade.nvim"] = {
+  --transparency
+  ["xiyaowong/nvim-transparent"] = {
     config = function()
-      require("shade").setup {
-        overlay_opacity = 50,
-        opacity_step = 1,
-        exclude_filetypes = { "NvimTree" },
+      require("transparent").setup {
+        enable = true, -- boolean: enable transparent
+        extra_groups = {
+          "BufferLineTabClose",
+          "BufferlineBufferSelected",
+          "BufferLineFill",
+          "BufferLineBackground",
+          "BufferLineSeparator",
+          "BufferLineIndicatorSelected",
+        },
       }
     end,
   },
 
-  ["lewis6991/gitsigns.nvim"] = {
-    config = function ()
-      require('gitsigns').setup()
-    end
-  }
+  --terminal
+  ["akinsho/toggleterm.nvim"] = {
+    config = function()
+      require("toggleterm").setup {
+        shade_terminals = true,
+        shading_factor = "1",
+      }
+    end,
+  },
+  -- debugger
+  ["mfussenegger/nvim-dap"] = {
+    disable = false,
+  },
+
+  ["rcarriga/nvim-dap-ui"] = {
+    requires = { "mfussenegger/nvim-dap" },
+    config = function()
+      require("dapui").setup()
+    end,
+  },
 }
