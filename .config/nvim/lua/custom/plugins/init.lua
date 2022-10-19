@@ -14,7 +14,7 @@ return {
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
-      require "custom.plugins.lspconfig"
+      require "custom.plugins.configs.lspconfig"
     end,
   },
 
@@ -34,14 +34,14 @@ return {
     after = "base46",
     disable = false,
     config = function()
-      require "custom.plugins.alpha"
+      require "custom.plugins.configs.alpha"
     end,
   },
 
   ["folke/which-key.nvim"] = {
     disable = false,
     config = function()
-      require "custom.plugins.whichkey"
+      require "custom.plugins.configs.whichkey"
     end,
   },
 
@@ -67,21 +67,21 @@ return {
       require("formatter").setup {
         logging = true,
         filetype = {
-          css = require("custom.plugins.formatters").prettier,
-          html = require("custom.plugins.formatters").prettier,
-          scss = require("custom.plugins.formatters").prettier,
-          markdown = require("custom.plugins.formatters").prettier,
-          typescriptreact = require("custom.plugins.formatters").prettier,
-          typescript = require("custom.plugins.formatters").prettier,
-          javascript = require("custom.plugins.formatters").prettier,
-          javascriptreact = require("custom.plugins.formatters").prettier,
-          json = require("custom.plugins.formatters").prettier,
-          java = require("custom.plugins.formatters").clang_format,
-          c = require("custom.plugins.formatters").clang_format,
-          cpp = require("custom.plugins.formatters").clang_format,
-          lua = require("custom.plugins.formatters").stylua,
-          sh = require("custom.plugins.formatters").shfmt,
-          python = require("custom.plugins.formatters").black,
+          css = require("custom.plugins.configs.formatters").prettier,
+          html = require("custom.plugins.configs.formatters").prettier,
+          scss = require("custom.plugins.configs.formatters").prettier,
+          markdown = require("custom.plugins.configs.formatters").prettier,
+          typescriptreact = require("custom.plugins.configs.formatters").prettier,
+          typescript = require("custom.plugins.configs.formatters").prettier,
+          javascript = require("custom.plugins.configs.formatters").prettier,
+          javascriptreact = require("custom.plugins.configs.formatters").prettier,
+          json = require("custom.plugins.configs.formatters").prettier,
+          java = require("custom.plugins.configs.formatters").clang_format,
+          c = require("custom.plugins.configs.formatters").clang_format,
+          cpp = require("custom.plugins.configs.formatters").clang_format,
+          lua = require("custom.plugins.configs.formatters").stylua,
+          sh = require("custom.plugins.configs.formatters").shfmt,
+          python = require("custom.plugins.configs.formatters").black,
         },
       }
     end,
@@ -159,15 +159,38 @@ return {
       }
     end,
   },
+
   -- debugger
   ["mfussenegger/nvim-dap"] = {
     disable = false,
+    require "custom.plugins.configs.debugger",
+  },
+
+  ["theHamsta/nvim-dap-virtual-text"] = {
+    config = function()
+      require "custom.plugins.configs.dap-virtual-text"
+    end,
   },
 
   ["rcarriga/nvim-dap-ui"] = {
-    requires = { "mfussenegger/nvim-dap" },
+    requires = {
+      { "mfussenegger/nvim-dap" },
+      { "theHamsta/nvim-dap-virtual-text" },
+    },
     config = function()
-      require("dapui").setup()
+      require "custom.plugins.configs.dapui"
+    end,
+  },
+
+  -- nvim jdtls
+  ["mfussenegger/nvim-jdtls"] = {
+    disable = false,
+  },
+
+  ["folke/todo-comments.nvim"] = {
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {}
     end,
   },
 }

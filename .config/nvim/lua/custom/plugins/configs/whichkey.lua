@@ -146,17 +146,58 @@ local mappings = {
   -- debugger
   d = {
     name = "Debugger",
-    b = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>" , "Toggle Breakpoint" },
-    c = { "<cmd>lua require'dap'.continue()<cr>" , "Continue" },
-    i = { "<cmd>lua require'dap'.step_into()<cr>" , "Step Into" },
-    o = { "<cmd>lua require'dap'.step_over()<cr>" , "Step over" },
-    O = { "<cmd>lua require'dap'.step_out()<cr>" , "Step out" },
-    r = { "<cmd>lua require'dap'.repl.toggle()<cr>" , "Repl Toggle" },
-    l = { "<cmd>lua require'dap'.run_last()<cr>" , "Run Last" },
-    u = { "<cmd>lua require'dapui'.toggle()<cr>" , "Dap UI Toggle" },
-    t = { "<cmd>lua require'dap'.terminate()<cr>" , "Terminate" },
+    b = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+    c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
+    i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
+    o = { "<cmd>lua require'dap'.step_over()<cr>", "Step over" },
+    O = { "<cmd>lua require'dap'.step_out()<cr>", "Step out" },
+    r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Repl Toggle" },
+    l = { "<cmd>lua require'dap'.run_last()<cr>", "Run Last" },
+    u = { "<cmd>lua require'dapui'.toggle()<cr>", "Dap UI Toggle" },
+    t = { "<cmd>lua require'dap'.terminate()<cr>", "Terminate" },
+  },
+  -- todo list
+  a = {
+    name = "Todo comments",
+    n = { "<cmd>lua require('todo-comments').jump_next() <cr>", "Jumo Next" },
+    p = { "<cmd>lua require('todo-comments').jump_prev() <cr>", "Jump Prev" },
+    e = {
+      "<cmd>lua  require('todo-comments').jump_next({keywords = { 'ERROR', 'WARNING' }}) <cr>",
+      "Next Error/Warning",
+    },
+  },
+  -- java lsp
+  j = {
+    name = "Java nvim-jdtls extra",
+    o = { "<cmd> lua require'jdtls'.organize_imports() <cr>", "Organize Imports" },
+    v = { "<cmd>  lua require('jdtls').extract_variable() <cr>", "Extract Variable" },
+    c = { "<cmd> lua require('jdtls').extract_constant() <cr>", "Extract Constant" },
+    t = { "<cmd> lua require'jdtls'.test_nearest_method() <cr>", "Test Nearest Method" },
+    T = { "<cmd> lua require'jdtls'.test_class() <cr>", "Test Class" },
+    u = { "<cmd> JdtUpdateConfig <cr>", "Update Config" },
+  },
+}
+
+-- Visual mode Mappings
+local vopts = {
+  mode = "v", -- NORMAL mode
+  prefix = "<leader>",
+  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  silent = true, -- use `silent` when creating keymaps
+  noremap = true, -- use `noremap` when creating keymaps
+  nowait = true, -- use `nowait` when creating keymaps
+}
+
+local vmappings = {
+  -- nvim-jdtls
+  j = {
+    name = "Java nvim-jdtls extra",
+    v = { "<cmd> lua require('jdtls').extract_variable(true) <cr>", "Extract Variable" },
+    c = { "<cmd> lua require('jdtls').extract_constant(true) <cr>", "Extract Constant" },
+    m = { "<cmd> lua require('jdtls').extract_method(true) <cr>", "Extract Method" },
   },
 }
 
 wk.setup(options)
 wk.register(mappings, opts)
+wk.register(vmappings, vopts)
