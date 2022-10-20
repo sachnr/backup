@@ -10,6 +10,9 @@ M.disabled = {
   },
   n = {
     ["<leader>x"] = "",
+    ["<Bslash>"] = "",
+    ["<S-Tab>"] = "",
+    ["<TAB>"] = "",
     ["<leader>e"] = "",
     ["<C-c>"] = "",
     ["<leader>rn"] = "",
@@ -70,12 +73,15 @@ M.general = {
     ["<leader>f"] = { "<cmd> :Format <CR>", "formatter" },
     -- nvterm
     ["<leader>`"] = { "<Cmd> :ToggleTerm <CR>", "toggle horizontal term" },
-    -- tabufline
+    -- bufferline
+    ["<Bslash>"] = { " <Cmd> BufferLinePick <CR>", "Pick Buffer" },
+    ["<TAB>"] = { " <Cmd> BufferLineCycleNext <CR>", "Next Buffer" },
+    ["<S-Tab>"] = { " <Cmd> BufferLineCyclePrev <CR>", "Prev Buffer" },
     ["<leader>q"] = {
       function()
-        require("nvchad_ui.tabufline").close_buffer()
+        require("bufdelete").bufdelete(0, true)
       end,
-      "close buffer",
+      "Close Buffer",
     },
     ["<leader>n"] = { "<cmd> enew <CR>", "new buffer" },
     -- markdown-preview

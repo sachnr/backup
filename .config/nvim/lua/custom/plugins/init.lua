@@ -11,6 +11,17 @@ return {
   -- ================== Override configs ====================
   -- =========================================================
 
+  ["NvChad/ui"] = {
+    override_options = {
+      statusline = {
+        separator_style = "block", -- default/round/block/arrow
+      },
+      tabufline = {
+        enabled = false,
+      },
+    },
+  },
+
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
@@ -52,13 +63,23 @@ return {
   -- scrollbar
   ["petertriho/nvim-scrollbar"] = {
     config = function()
-      require("scrollbar").setup {
+      require("scrollbar").setup{
         handle = {
-          color = "#78B892",
-        },
+        color = "#83c092",
+    },
       }
     end,
   },
+
+  -- bufferline
+  ["akinsho/bufferline.nvim"] = {
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require "custom.plugins.configs.bufferline"
+    end,
+  },
+
+  ["famiu/bufdelete.nvim"] = {},
 
   -- formatter
   ["mhartington/formatter.nvim"] = {
@@ -138,14 +159,6 @@ return {
     config = function()
       require("transparent").setup {
         enable = true, -- boolean: enable transparent
-        extra_groups = {
-          "BufferLineTabClose",
-          "BufferlineBufferSelected",
-          "BufferLineFill",
-          "BufferLineBackground",
-          "BufferLineSeparator",
-          "BufferLineIndicatorSelected",
-        },
       }
     end,
   },
@@ -185,12 +198,5 @@ return {
   -- nvim jdtls
   ["mfussenegger/nvim-jdtls"] = {
     disable = false,
-  },
-
-  ["folke/todo-comments.nvim"] = {
-    requires = "nvim-lua/plenary.nvim",
-    config = function()
-      require("todo-comments").setup {}
-    end,
   },
 }

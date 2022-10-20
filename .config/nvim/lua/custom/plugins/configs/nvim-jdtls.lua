@@ -10,12 +10,11 @@ local on_attach = function(client, bufnr)
     require("nvchad_ui.signature").setup(client)
   end
 
-  if client.name == "jdtls" then
-    vim.lsp.codelens.refresh()
-    require("jdtls").setup_dap { hotcodereplace = "auto" }
-    require("jdtls.dap").setup_dap_main_class_configs()
-  end
+  vim.lsp.codelens.refresh()
+  require("jdtls").setup_dap { hotcodereplace = "auto" }
+  require("jdtls.dap").setup_dap_main_class_configs()
 end
+
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 local workspace_dir = os.getenv "HOME" .. "/.local/share/nvim/workspace/" .. project_name
 local jdtls_folder = os.getenv "HOME" .. "/.local/share/nvim/mason/packages/jdtls/"
