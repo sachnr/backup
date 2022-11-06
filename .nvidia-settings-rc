@@ -1,8 +1,8 @@
 #
-# /home/sachnr/.local/bin/.nvidia-settings-rc
+# /home/sachnr/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA Settings utility
-# Generated on Mon Aug  1 10:45:23 2022
+# Generated on Thu Nov  3 15:07:43 2022
 #
 
 # ConfigProperties:
@@ -12,9 +12,9 @@ DisplayStatusBar = Yes
 SliderTextEntries = Yes
 IncludeDisplayNameInConfigFile = No
 UpdateRulesOnProfileNameChange = Yes
-Timer = Memory_Used_(GPU_0),No,3000
-Timer = Thermal_Monitor_(GPU_0),No,1000
-Timer = PowerMizer_Monitor_(GPU_0),No,1000
+Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
+Timer = Thermal_Monitor_(GPU_0),Yes,1000
+Timer = Memory_Used_(GPU_0),Yes,3000
 
 # Attributes:
 
@@ -78,9 +78,9 @@ Timer = PowerMizer_Monitor_(GPU_0),No,1000
 [DPY:DP-4]/RedGamma=1.000000
 [DPY:DP-4]/GreenGamma=1.000000
 [DPY:DP-4]/BlueGamma=1.000000
-[DPY:DP-4]/Dithering=2
-[DPY:DP-4]/DitheringMode=0
-[DPY:DP-4]/DitheringDepth=0
+[DPY:DP-4]/Dithering=0
+[DPY:DP-4]/DitheringMode=3
+[DPY:DP-4]/DitheringDepth=1
 [DPY:DP-4]/DigitalVibrance=0
 [DPY:DP-4]/ColorSpace=0
 [DPY:DP-4]/ColorRange=0
@@ -91,3 +91,4 @@ Timer = PowerMizer_Monitor_(GPU_0),No,1000
 [DPY:DP-5]/ColorSpace=0
 [DPY:DP-5]/ColorRange=0
 [DPY:DP-5]/SynchronousPaletteUpdates=0
+[GPU:0]/GPUPowerMizerMode=2
