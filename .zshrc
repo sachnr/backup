@@ -14,6 +14,7 @@ export ZSH="$HOME/.config/.oh-my-zsh"
 # export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export PATH="${HOME}/.local/share/nvim/mason/bin:${PATH}"
 export FZF_BASE=/usr/bin/fzf
+alias tmux="tmux -2"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

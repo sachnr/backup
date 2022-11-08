@@ -18,14 +18,14 @@ configuration{
 
 /* -- Nord Dark-- */
 * {
-    bg-col:  #282828;
-    bg-col-light: #3C3836;
-    border-col: #1D2021;
-    selected-col: #83A598;
-    blue: #83A598;
-    fg-col: #FBF1C7;
-    fg-col2: #32302F;
-    grey: #928374;
+    bg-col:  #232a2f;
+    bg-col-light: #2b3339;
+    border-col: #9aa79d;
+    selected-col: #a7c080;
+    blue: #a7c080;
+    fg-col: #d3c6aa;
+    fg-col2: #1e2327;
+    grey: #9aa79d;
     width: 600;
 }
 

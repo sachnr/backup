@@ -114,7 +114,7 @@ History Items[$e]=file:$HOME/.local/share/wallpapers/Aenami,file:$HOME/.local/sh
 [General]
 ColorScheme=MateriaLight
 ColorSchemeHash=3d5e5a1297bd184074e29997a40eb00626f81474
-TerminalApplication=alacritty
+TerminalApplication=st
 XftHintStyle=hintslight
 XftSubPixel=rgb
 accentColorFromWallpaper=false
@@ -129,7 +129,7 @@ Theme=Papirus
 
 [KDE]
 LookAndFeelPackage=org.kde.oxygen
-ShowDeleteCommand=false
+ShowDeleteCommand=true
 SingleClick=false
 widgetStyle=kvantum
 
@@ -152,6 +152,9 @@ Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=101
 View Style=DetailTree
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
 
 [PreviewSettings]
 MaximumRemoteSize=0

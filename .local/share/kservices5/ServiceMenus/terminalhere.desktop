@@ -7,6 +7,6 @@ X-KDE-Priority=TopLevel
 X-KDE-AuthorizeAction=shell_access
 
 [Desktop Action openTerminalHere]
-Name=Open Alacritty here
+Name=Open Terminal Here
 Icon=utilities-terminal
-Exec=/usr/bin/alacritty --working-directory %f
+Exec=/usr/local/bin/st -d %f

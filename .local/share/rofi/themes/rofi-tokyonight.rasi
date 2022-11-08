@@ -1,3 +1,4 @@
+
 configuration{
     modi: "run,drun,window";
     lines: 5;
@@ -16,16 +17,16 @@ configuration{
     sidebar-mode: true;
 }
 
-/* -- Nord Dark-- */
+/* -- tokyoNight-- */
 * {
-    bg-col:  #282828;
-    bg-col-light: #3C3836;
-    border-col: #1D2021;
-    selected-col: #83A598;
-    blue: #83A598;
-    fg-col: #FBF1C7;
-    fg-col2: #32302F;
-    grey: #928374;
+    bg-col:  #1a1b26;
+    bg-col-light: #24283b;
+    border-col: #000a0e;
+    selected-col: #7aa2f7;
+    blue: #80a8fd;
+    fg-col: #bbc5f0;
+    fg-col2: #24283b;
+    grey: #40486a;
     width: 600;
 }
 
