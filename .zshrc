@@ -11,10 +11,7 @@ fi
 # Path to your oh-my-zsh installation.
 export GPG_TTY=$(tty)
 export ZSH="$HOME/.config/.oh-my-zsh"
-# export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export PATH="${HOME}/.local/share/nvim/mason/bin:${PATH}"
-export FZF_BASE=/usr/bin/fzf
-alias tmux="tmux -2"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -83,7 +80,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages sudo colorize zsh-autosuggestions fzf)
+plugins=(git colored-man-pages sudo zsh-autosuggestions fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,11 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -112,9 +105,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Starship
-# eval "$(starship init zsh)"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

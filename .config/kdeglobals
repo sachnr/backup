@@ -114,7 +114,7 @@ History Items[$e]=file:$HOME/.local/share/wallpapers/Aenami,file:$HOME/.local/sh
 [General]
 ColorScheme=MateriaLight
 ColorSchemeHash=3d5e5a1297bd184074e29997a40eb00626f81474
-TerminalApplication=st
+TerminalApplication=kitty
 XftHintStyle=hintslight
 XftSubPixel=rgb
 accentColorFromWallpaper=false

@@ -1,0 +1,89 @@
+Nov 20 00:19 : exception: Failed to open '/home/sachnr/.config/mpd/mpdstate': No such file or directory
+Nov 20 00:19 : update: added Botw - Soundtrack/2.22 Rito Village.mp3
+Nov 20 00:19 : update: added Botw - Soundtrack/1.30 Kass's Theme.mp3
+Nov 20 00:19 : update: added Botw - Soundtrack/1.31 Kass- Main Theme.mp3
+Nov 20 00:19 : update: added Botw - Soundtrack/1.32 Stables.mp3
+Nov 20 00:19 : update: added Botw - Soundtrack/1.22 Kakariko Village.mp3
+Nov 20 00:19 : update: added Botw - Soundtrack/1.08 Shrine.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/21 - Dream.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/04 - False Knight.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/15 - Resting Grounds.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/12 - Fungal Wastes.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/01 - Enter Hallownest.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/23 - White Palace.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/08 - Mantis Lords.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/24 - Sealed Vessel.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/17 - The White Lady.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/10 - Dung Defender.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/22 - Dream Battle.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/11 - Crystal Peak.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/18 - Broken Vessel.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/25 - Radiance.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/09 - City of Tears.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/16 - Queen's Gardens.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/05 - Greenpath.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/06 - Hornet.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/20 - Nosk.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/02 - Dirtmouth.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/03 - Crossroads.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/19 - Kingdom's Edge.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/07 - Reflection.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/13 - Decisive Battle.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/26 - Hollow Knight.mp3
+Nov 20 00:19 : update: added Hollow Knight - Official Soundtrack/14 - Soul Sanctum.mp3
+Nov 20 00:27 : player: played "Botw - Soundtrack/2.22 Rito Village.mp3"
+Nov 20 00:30 : client: [2] command "close" during idle
+Nov 20 00:30 : client: [3] command "close" during idle
+Nov 20 00:31 : client: [4] command "close" during idle
+Nov 20 00:34 : client: [5] command "close" during idle
+Nov 20 00:38 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 20 00:40 : client: [6] command "close" during idle
+Nov 20 00:40 : client: [8] command "close" during idle
+Nov 20 00:45 : player: played "Botw - Soundtrack/1.22 Kakariko Village.mp3"
+Nov 20 00:46 : player: played "Botw - Soundtrack/1.30 Kass's Theme.mp3"
+Nov 20 00:48 : player: played "Botw - Soundtrack/1.31 Kass- Main Theme.mp3"
+Nov 20 00:50 : client: [9] command "close" during idle
+Nov 20 00:51 : player: played "Botw - Soundtrack/1.32 Stables.mp3"
+Nov 20 00:55 : output: Failed to play on "Pulse MPD Output" (pulse): disconnected
+Nov 20 00:56 : client: [11] command "close" during idle
+Nov 20 00:56 : client: [12] command "close" during idle
+Nov 20 00:56 : client: [13] command "close" during idle
+Nov 20 00:56 : client: [14] command "close" during idle
+Nov 20 00:56 : client: [15] command "close" during idle
+Nov 20 00:56 : client: [16] command "close" during idle
+Nov 20 00:56 : player: played "Botw - Soundtrack/2.22 Rito Village.mp3"
+Nov 20 01:01 : client: [17] command "close" during idle
+Nov 20 17:00 : client: [0] command "close" during idle
+Nov 21 01:08 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 21 03:39 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 21 04:05 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 21 04:22 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 21 06:21 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 21 14:38 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 21 15:07 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 21 15:18 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 22 04:35 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 22 13:54 : player: played "Botw - Soundtrack/1.32 Stables.mp3"
+Nov 22 14:00 : player: played "Botw - Soundtrack/2.22 Rito Village.mp3"
+Nov 22 20:10 : player: played "Botw - Soundtrack/1.32 Stables.mp3"
+Nov 22 22:40 : player: played "Botw - Soundtrack/2.22 Rito Village.mp3"
+Nov 22 22:40 : exception: Not playing
+Nov 22 22:40 : exception: Not playing
+Nov 22 22:40 : exception: Not playing
+Nov 22 22:40 : exception: Not playing
+Nov 22 22:40 : exception: Not playing
+Nov 22 22:40 : exception: Not playing
+Nov 24 14:41 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 24 15:31 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 24 15:46 : client: [3] command "close" during idle
+Nov 24 15:57 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 24 15:59 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 24 16:02 : player: played "Botw - Soundtrack/1.08 Shrine.mp3"
+Nov 24 16:11 : client: [3] command "close" during idle
+Nov 24 16:12 : client: [4] command "close" during idle
+Nov 24 22:36 : player: played "Botw - Soundtrack/2.22 Rito Village.mp3"
+Nov 24 22:36 : exception: Not playing
+Nov 24 22:36 : exception: Not playing
+Nov 24 22:36 : exception: Not playing
+Nov 24 22:36 : exception: Not playing
+Nov 25 06:02 : player: played "Botw - Soundtrack/1.30 Kass's Theme.mp3"

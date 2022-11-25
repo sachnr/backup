@@ -1,4 +1,0 @@
-#!/bin/bash
-
-id="$(xsetwacom list devices | grep stylus | awk '{print $6}')"
-xsetwacom set $id MapToOutput 1920x1080+1920+0

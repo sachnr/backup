@@ -1,24 +1,25 @@
-Xft.antialias:	1
-Xft.hinting:	1
-Xft.autohint:	0
-Xft.hintstyle:	hintslight
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.autohint: 0
+Xft.hintstyle: hintslight
 Xft.rgba:	rgb
-Xft.lcdfilter:	lcddefault
+Xft.lcdfilter: lcddefault
 
-st.font:         JetBrainsMono Nerd Font:style:medium:pixelsize=13
+st.font: JetBrainsMono Nerd Font:style:medium:pixelsize=14
 
 ! window padding
-st.borderpx: 20
+st.borderpx: 10
 
 !- 0.1 to 0.9 = transparency
-st.alpha: 1.0
+st.alpha: 1 
 
 *background: #061115
 *foreground: #edeff0
 
 ! Black + DarkGrey
-*color0:  #232526
-*color8:  #2c2e2f
+*color0:  #0d181c
+*color8:  #4f5a5e
 
 ! DarkRed + Red
 *color1:  #df5b61
@@ -47,4 +48,3 @@ st.alpha: 1.0
 ! LightGrey + White
 *color7:  #e4e6e7
 *color15: #f2f4f5
-

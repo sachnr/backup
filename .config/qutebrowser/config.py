@@ -91,139 +91,295 @@ c.tabs.min_width = 140
 c.tabs.padding = {"top": 7, "bottom": 7, "left": 14, "right": 14}
 
 # Colors
-# import colors from .Xresources
+base00 = "#1d2021"
+base01 = "#3c3836"
+base02 = "#504945"
+base03 = "#665c54"
+base04 = "#bdae93"
+base05 = "#d5c4a1"
+base06 = "#ebdbb2"
+base07 = "#fbf1c7"
+base08 = "#fb4934"
+base09 = "#fe8019"
+base0A = "#fabd2f"
+base0B = "#b8bb26"
+base0C = "#8ec07c"
+base0D = "#83a598"
+base0E = "#d3869b"
+base0F = "#d65d0e"
 
+# set qutebrowser colors
 
-def read_xresources(prefix):
-    props = {}
-    x = subprocess.run(["xrdb", "-query"], capture_output=True, check=True, text=True)
-    lines = x.stdout.split("\n")
-    for line in filter(lambda l: l.startswith(prefix), lines):
-        prop, _, value = line.partition(":\t")
-        props[prop] = value
-    return props
+# Text color of the completion widget. May be a single color to use for
+# all columns or a list of three colors, one for each column.
+c.colors.completion.fg = base05
 
+# Background color of the completion widget for odd rows.
+c.colors.completion.odd.bg = base01
 
-xresources = read_xresources("*")
+# Background color of the completion widget for even rows.
+c.colors.completion.even.bg = base00
 
-background = xresources["*background"]
-foreground = xresources["*foreground"]
+# Foreground color of completion widget category headers.
+c.colors.completion.category.fg = base0A
 
-black = xresources["*color0"]
-grey = xresources["*color8"]
+# Background color of the completion widget category headers.
+c.colors.completion.category.bg = base00
 
-darkred = xresources["*color1"]
-red = xresources["*color9"]
+# Top border color of the completion widget category headers.
+c.colors.completion.category.border.top = base00
 
-darkgreen = xresources["*color2"]
-green = xresources["*color10"]
+# Bottom border color of the completion widget category headers.
+c.colors.completion.category.border.bottom = base00
 
-darkyellow = xresources["*color3"]
-yellow = xresources["*color11"]
+# Foreground color of the selected completion item.
+c.colors.completion.item.selected.fg = base05
 
-darkblue = xresources["*color4"]
-blue = xresources["*color12"]
+# Background color of the selected completion item.
+c.colors.completion.item.selected.bg = base02
 
-darkmagenta = xresources["*color5"]
-magenta = xresources["*color13"]
+# Top border color of the selected completion item.
+c.colors.completion.item.selected.border.top = base02
 
-darkcyan = xresources["*color6"]
-cyan = xresources["*color14"]
+# Bottom border color of the selected completion item.
+c.colors.completion.item.selected.border.bottom = base02
 
-lightgrey = xresources["*color7"]
-white = xresources["*color15"]
+# Foreground color of the matched text in the selected completion item.
+c.colors.completion.item.selected.match.fg = base0B
 
-c.colors.completion.category.border.bottom = darkblue
-c.colors.completion.category.border.top = darkblue
-c.colors.completion.category.fg = foreground
-c.colors.completion.even.bg = background
-c.colors.completion.fg = [foreground, foreground, foreground]
-c.colors.completion.item.selected.bg = darkblue
-c.colors.completion.item.selected.border.bottom = darkblue
-c.colors.completion.item.selected.border.top = darkblue
-c.colors.completion.item.selected.fg = black
-c.colors.completion.item.selected.match.fg = red
-c.colors.completion.match.fg = red
-c.colors.completion.odd.bg = background
-c.colors.completion.scrollbar.bg = lightgrey
-c.colors.completion.scrollbar.fg = grey
-c.colors.contextmenu.disabled.bg = black
-c.colors.contextmenu.disabled.fg = lightgrey
-c.colors.contextmenu.menu.bg = background
-c.colors.contextmenu.menu.fg = foreground
-c.colors.contextmenu.selected.bg = blue
-c.colors.contextmenu.selected.fg = black
-c.colors.downloads.bar.bg = background
-c.colors.downloads.error.bg = darkred
-c.colors.downloads.error.fg = black
-c.colors.downloads.start.bg = darkgreen
-c.colors.downloads.start.fg = black
-c.colors.downloads.stop.bg = darkblue
-c.colors.downloads.stop.fg = black
-c.colors.downloads.system.bg = "rgb"
-c.colors.downloads.system.fg = "rgb"
-c.colors.hints.bg = background
-c.colors.hints.fg = white
-c.colors.hints.match.fg = green
-c.colors.keyhint.bg = background
-c.colors.keyhint.fg = foreground
-c.colors.keyhint.suffix.fg = yellow
-c.colors.messages.error.bg = darkred
-c.colors.messages.error.border = darkred
-c.colors.messages.error.fg = black
-c.colors.messages.info.bg = background
-c.colors.messages.info.border = darkcyan
-c.colors.messages.info.fg = black
-c.colors.messages.warning.bg = darkyellow
-c.colors.messages.warning.border = darkyellow
-c.colors.messages.warning.fg = black
-c.colors.prompts.bg = background
-c.colors.prompts.border = "1px solid " + darkblue
-c.colors.prompts.fg = foreground
-c.colors.prompts.selected.bg = black
-c.colors.prompts.selected.fg = white
-c.colors.statusbar.caret.bg = background
-c.colors.statusbar.caret.fg = darkcyan
-c.colors.statusbar.caret.selection.bg = background
-c.colors.statusbar.caret.selection.fg = cyan
-c.colors.statusbar.command.bg = background
-c.colors.statusbar.command.fg = green
-c.colors.statusbar.command.private.bg = background
-c.colors.statusbar.command.private.fg = green
-c.colors.statusbar.insert.bg = background
-c.colors.statusbar.insert.fg = magenta
-c.colors.statusbar.normal.bg = background
-c.colors.statusbar.normal.fg = foreground
-c.colors.statusbar.passthrough.bg = darkyellow
-c.colors.statusbar.passthrough.fg = black
-c.colors.statusbar.private.bg = background
-c.colors.statusbar.private.fg = darkmagenta
-c.colors.statusbar.progress.bg = darkgreen
-c.colors.statusbar.url.error.fg = red
-c.colors.statusbar.url.fg = foreground
-c.colors.statusbar.url.hover.fg = blue
-c.colors.statusbar.url.success.http.fg = foreground
-c.colors.statusbar.url.success.https.fg = lightgrey
-c.colors.statusbar.url.warn.fg = yellow
-c.colors.tabs.bar.bg = black
-c.colors.tabs.even.bg = black
-c.colors.tabs.even.fg = grey
-c.colors.tabs.indicator.error = red
-c.colors.tabs.indicator.start = blue
-c.colors.tabs.indicator.stop = green
-c.colors.tabs.indicator.system = "rgb"
-c.colors.tabs.odd.bg = black
-c.colors.tabs.odd.fg = grey
-c.colors.tabs.pinned.even.bg = darkgreen
-c.colors.tabs.pinned.even.fg = black
-c.colors.tabs.pinned.odd.bg = darkgreen
-c.colors.tabs.pinned.odd.fg = black
-c.colors.tabs.pinned.selected.even.bg = grey
-c.colors.tabs.pinned.selected.even.fg = foreground
-c.colors.tabs.pinned.selected.odd.bg = grey
-c.colors.tabs.pinned.selected.odd.fg = foreground
-c.colors.tabs.selected.even.bg = grey
-c.colors.tabs.selected.even.fg = white
-c.colors.tabs.selected.odd.bg = grey
-c.colors.tabs.selected.odd.fg = white
-c.colors.webpage.bg = lightgrey
+# Foreground color of the matched text in the completion.
+c.colors.completion.match.fg = base0B
+
+# Color of the scrollbar handle in the completion view.
+c.colors.completion.scrollbar.fg = base05
+
+# Color of the scrollbar in the completion view.
+c.colors.completion.scrollbar.bg = base00
+
+# Background color of disabled items in the context menu.
+c.colors.contextmenu.disabled.bg = base01
+
+# Foreground color of disabled items in the context menu.
+c.colors.contextmenu.disabled.fg = base04
+
+# Background color of the context menu. If set to null, the Qt default is used.
+c.colors.contextmenu.menu.bg = base00
+
+# Foreground color of the context menu. If set to null, the Qt default is used.
+c.colors.contextmenu.menu.fg =  base05
+
+# Background color of the context menu’s selected item. If set to null, the Qt default is used.
+c.colors.contextmenu.selected.bg = base02
+
+#Foreground color of the context menu’s selected item. If set to null, the Qt default is used.
+c.colors.contextmenu.selected.fg = base05
+
+# Background color for the download bar.
+c.colors.downloads.bar.bg = base00
+
+# Color gradient start for download text.
+c.colors.downloads.start.fg = base00
+
+# Color gradient start for download backgrounds.
+c.colors.downloads.start.bg = base0D
+
+# Color gradient end for download text.
+c.colors.downloads.stop.fg = base00
+
+# Color gradient stop for download backgrounds.
+c.colors.downloads.stop.bg = base0C
+
+# Foreground color for downloads with errors.
+c.colors.downloads.error.fg = base08
+
+# Font color for hints.
+c.colors.hints.fg = base00
+
+# Background color for hints. Note that you can use a `rgba(...)` value
+# for transparency.
+c.colors.hints.bg = base0A
+
+# Font color for the matched part of hints.
+c.colors.hints.match.fg = base05
+
+# Text color for the keyhint widget.
+c.colors.keyhint.fg = base05
+
+# Highlight color for keys to complete the current keychain.
+c.colors.keyhint.suffix.fg = base05
+
+# Background color of the keyhint widget.
+c.colors.keyhint.bg = base00
+
+# Foreground color of an error message.
+c.colors.messages.error.fg = base00
+
+# Background color of an error message.
+c.colors.messages.error.bg = base08
+
+# Border color of an error message.
+c.colors.messages.error.border = base08
+
+# Foreground color of a warning message.
+c.colors.messages.warning.fg = base00
+
+# Background color of a warning message.
+c.colors.messages.warning.bg = base0E
+
+# Border color of a warning message.
+c.colors.messages.warning.border = base0E
+
+# Foreground color of an info message.
+c.colors.messages.info.fg = base05
+
+# Background color of an info message.
+c.colors.messages.info.bg = base00
+
+# Border color of an info message.
+c.colors.messages.info.border = base00
+
+# Foreground color for prompts.
+c.colors.prompts.fg = base05
+
+# Border used around UI elements in prompts.
+c.colors.prompts.border = base00
+
+# Background color for prompts.
+c.colors.prompts.bg = base00
+
+# Background color for the selected item in filename prompts.
+c.colors.prompts.selected.bg = base02
+
+# Foreground color for the selected item in filename prompts.
+c.colors.prompts.selected.fg = base05
+
+# Foreground color of the statusbar.
+c.colors.statusbar.normal.fg = base0B
+
+# Background color of the statusbar.
+c.colors.statusbar.normal.bg = base00
+
+# Foreground color of the statusbar in insert mode.
+c.colors.statusbar.insert.fg = base00
+
+# Background color of the statusbar in insert mode.
+c.colors.statusbar.insert.bg = base0D
+
+# Foreground color of the statusbar in passthrough mode.
+c.colors.statusbar.passthrough.fg = base00
+
+# Background color of the statusbar in passthrough mode.
+c.colors.statusbar.passthrough.bg = base0C
+
+# Foreground color of the statusbar in private browsing mode.
+c.colors.statusbar.private.fg = base00
+
+# Background color of the statusbar in private browsing mode.
+c.colors.statusbar.private.bg = base01
+
+# Foreground color of the statusbar in command mode.
+c.colors.statusbar.command.fg = base05
+
+# Background color of the statusbar in command mode.
+c.colors.statusbar.command.bg = base00
+
+# Foreground color of the statusbar in private browsing + command mode.
+c.colors.statusbar.command.private.fg = base05
+
+# Background color of the statusbar in private browsing + command mode.
+c.colors.statusbar.command.private.bg = base00
+
+# Foreground color of the statusbar in caret mode.
+c.colors.statusbar.caret.fg = base00
+
+# Background color of the statusbar in caret mode.
+c.colors.statusbar.caret.bg = base0E
+
+# Foreground color of the statusbar in caret mode with a selection.
+c.colors.statusbar.caret.selection.fg = base00
+
+# Background color of the statusbar in caret mode with a selection.
+c.colors.statusbar.caret.selection.bg = base0D
+
+# Background color of the progress bar.
+c.colors.statusbar.progress.bg = base0D
+
+# Default foreground color of the URL in the statusbar.
+c.colors.statusbar.url.fg = base05
+
+# Foreground color of the URL in the statusbar on error.
+c.colors.statusbar.url.error.fg = base08
+
+# Foreground color of the URL in the statusbar for hovered links.
+c.colors.statusbar.url.hover.fg = base05
+
+# Foreground color of the URL in the statusbar on successful load
+# (http).
+c.colors.statusbar.url.success.http.fg = base0C
+
+# Foreground color of the URL in the statusbar on successful load
+# (https).
+c.colors.statusbar.url.success.https.fg = base0B
+
+# Foreground color of the URL in the statusbar when there's a warning.
+c.colors.statusbar.url.warn.fg = base0E
+
+# Background color of the tab bar.
+c.colors.tabs.bar.bg = base00
+
+# Color gradient start for the tab indicator.
+c.colors.tabs.indicator.start = base0D
+
+# Color gradient end for the tab indicator.
+c.colors.tabs.indicator.stop = base0C
+
+# Color for the tab indicator on errors.
+c.colors.tabs.indicator.error = base08
+
+# Foreground color of unselected odd tabs.
+c.colors.tabs.odd.fg = base05
+
+# Background color of unselected odd tabs.
+c.colors.tabs.odd.bg = base01
+
+# Foreground color of unselected even tabs.
+c.colors.tabs.even.fg = base05
+
+# Background color of unselected even tabs.
+c.colors.tabs.even.bg = base00
+
+# Background color of pinned unselected even tabs.
+c.colors.tabs.pinned.even.bg = base0C
+
+# Foreground color of pinned unselected even tabs.
+c.colors.tabs.pinned.even.fg = base07
+
+# Background color of pinned unselected odd tabs.
+c.colors.tabs.pinned.odd.bg = base0B
+
+# Foreground color of pinned unselected odd tabs.
+c.colors.tabs.pinned.odd.fg = base07
+
+# Background color of pinned selected even tabs.
+c.colors.tabs.pinned.selected.even.bg = base02
+
+# Foreground color of pinned selected even tabs.
+c.colors.tabs.pinned.selected.even.fg = base05
+
+# Background color of pinned selected odd tabs.
+c.colors.tabs.pinned.selected.odd.bg = base02
+
+# Foreground color of pinned selected odd tabs.
+c.colors.tabs.pinned.selected.odd.fg = base05
+
+# Foreground color of selected odd tabs.
+c.colors.tabs.selected.odd.fg = base05
+
+# Background color of selected odd tabs.
+c.colors.tabs.selected.odd.bg = base02
+
+# Foreground color of selected even tabs.
+c.colors.tabs.selected.even.fg = base05
+
+# Background color of selected even tabs.
+c.colors.tabs.selected.even.bg = base02
